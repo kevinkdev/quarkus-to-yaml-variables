@@ -4,13 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variable Transformer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1, h2 {
+            margin: 10px;
+        }
+        textarea {
+            width: 80%;
+            min-height: 150px;
+            margin: 10px;
+            padding: 10px;
+            resize: none;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            width: 80%;
+            margin: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body>
-    <h1>Variable Transformer</h1>
-    <textarea id="input" rows="10" cols="50"></textarea><br>
-    <button onclick="transform()">Transform</button><br>
-    <h2>Transformed Variables:</h2>
-    <pre id="output"></pre>
+    <div id="container">
+        <h1>Variable Transformer</h1>
+        <textarea id="input" rows="10" cols="50" placeholder="Paste your variables here..."></textarea><br>
+        <button onclick="transform()">Transform</button><br>
+        <h2>Transformed Variables:</h2>
+        <pre id="output"></pre>
+    </div>
 
     <script src="transform.js"></script>
 </body>
