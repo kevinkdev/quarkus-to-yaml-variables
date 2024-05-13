@@ -21,3 +21,10 @@ function transform() {
     // Display transformed variables
     document.getElementById("output").innerText = transformedText;
 }
+
+function sortVariables() {
+    var outputText = document.getElementById("output").innerText;
+    var lines = outputText.split('\n');
+    lines.sort();
+    document.getElementById("output").innerText = lines.join('\n');
+}
