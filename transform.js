@@ -28,3 +28,10 @@ function sortVariables() {
     lines.sort();
     document.getElementById("output").innerText = lines.join('\n');
 }
+
+function sortInput() {
+    var inputText = document.getElementById("input").value;
+    var lines = inputText.split('\n');
+    lines.sort();
+    document.getElementById("input").value = lines.join('\n');
+}
